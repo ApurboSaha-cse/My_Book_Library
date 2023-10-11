@@ -1,6 +1,6 @@
 <?php
     // Get books data
-    $books = json_decode(file_get_contents('assets / books.json'), true);
+    $books = json_decode(file_get_contents('assets/books.json'), true);
 
     // Create new book array
     $newBook = [
@@ -14,7 +14,7 @@
 
     // Update books.json
         $updatedBooksData = json_encode($books, JSON_PRETTY_PRINT);
-        file_put_contents('assets / books.json', $updatedBooksData);
+        file_put_contents('assets/books.json', $updatedBooksData);
 
         // Redirect to index.php
         header('Location: index.php');
